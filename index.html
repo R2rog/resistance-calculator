@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A simple handy tool that helps you determine the value of a resistor ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="icon" href="./assets/img/resistor.png">
+    <link rel="stylesheet" href="./src/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Resistance Calculator</title>
+</head>
+
+<body>
+    <div id="banner">
+        <img src="./assets/img/resistor.png" style="height: 5rem;" alt="">
+        <h1><a href="#color-code">Color code</a></h1>
+        <h1><a href="#calculate">How to calculate</a></h1>
+        <a href="https://github.com/R2rog/resistance-calculator">
+            <img src="./assets/img/github.png" alt="">
+        </a>
+    </div>
+    <div id="app">
+        <container></container>
+    </div>
+    <div id="content">
+        <h1 id="color-code">Electronic color codes</h1>
+        <img src="./assets/img/table 2.jpeg" alt="">
+        <p>
+            An electronic color code is used to indicate the values or ratings of electronic components, usually for
+            resistors, but also for capacitors, inductors, diodes and others.
+            A separate code, the 25-pair color code, is used to identify wires in some telecommunications cables.
+            Different codes are used for wire leads on devices such as transformers or in building wiring.
+        </p>
+        <h1 id="calculate">How to calculate</h1>
+        <p>To distinguish left from right there is a gap between the C and D bands:</p>
+        <img src="./assets/img/4-Band_Resistor.svg.png" alt="" style="background-color: white;">
+        <ul>
+            <li>The first significant figure of component value (left side)</li>
+            <li>The second significant figure (some precision resistors have a third significant figure, and thus five
+                bands).</li>
+            <li>The decimal multiplier (number of trailing zeroes, or power of 10 multiplier)</li>
+            <li>If present, indicates tolerance of value in percent (no band means 20%)</li>
+        </ul>
+        <p>In the above example, a resistor with bands of red, violet, green, and gold has first digit 2 (red; see table
+            below), second digit 7 (violet), followed by 5 (green) zeroes: 2700000 ohms. The fourth band is not always present, but when it is, represents tolerance. 
+            This is a percentage by which the resistor value can vary. The gold band in this example indicates a tolerance of ±5%, which can be represented by the letter J. 
+            This means that the value  can vary by up to 5% in either direction
+            Precision resistors may be marked with a five band system, to include three significant digits, a power of
+            10 multiplier (number of trailing zeroes, and a tolerance band.) <br>
+            Coded components have at least three bands: two significant figure bands and a multiplier, but there are other possible variations. For example, components that are made to military specifications are typically four-band resistors that may have a fifth band that indicates the reliability of the resistor in terms of failure rate percentage per 1000 hours of service. It is also possible to have a 5th band that is the temperature coefficient, which indicates the change in resistance of the component as a function of ambient temperature in terms of ppm/K.
+            More commonly, there are five-band resistors that are more precise due to a third significant figure band. This shifts the position of the multiplier and tolerance band into the 4th and 5th position as compared to a typical four-band resistor. <br>
+            On the most precise of resistors, a 6th band may be present. The first three bands would be the significant figure bands, the 4th the multiplier, the 5th the tolerance, and the 6th could be either reliability or temperature coefficient. There are also other possible variations, but these are some of the more common configurations
+            An extra-wide first band indicates a wire-wound resistor. Resistors manufactured for military use may also
+            include a fifth band which indicates component failure rate (reliability).
+            All coded components have at least two value bands and a multiplier, other bands are optional.
+        </p>
+    </div>
+    <div id="footer">
+        <h2> <a href="./src/views/tos.html">Terms of service</a></h2>
+        <h2> <a href="./src/views/privacy.html">Priavcy Policy</a></h2>
+        <a href="https://github.com/R2rog/resistance-calculator">
+            <img src="./assets/img/github.png" alt="">
+        </a>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./src/components/band.js"></script>
+    <script src="./src/components/multiplier.js"></script>
+    <script src="./src/components/tolerance.js"></script>
+    <script src="src/components/temperature.js"></script>
+    <script src="./src/components/container.js"></script>
+    <script>
+        const mountedApp = app.mount('#app');
+    </script>
+</body>
+
+</html>
