@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3"></script>
     <link rel="icon" href="./assets/img/resistor.png">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./dist/style/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,11 @@
 
 <body>
     <div id="banner">
-        <img src="./assets/img/resistor.png" style="height: 5rem;" alt="">
+        <img src="./dist/img/resistor.png" style="height: 5rem;" alt="">
         <h1><a href="#color-code">Color code</a></h1>
         <h1><a href="#calculate">How to calculate</a></h1>
         <a href="https://github.com/R2rog/resistance-calculator">
-            <img src="./assets/img/github.png" alt="">
+            <img src="./dist/img/github.png" alt="">
         </a>
     </div>
     <div id="app">
@@ -29,7 +29,7 @@
     </div>
     <div id="content">
         <h1 id="color-code">Electronic color codes</h1>
-        <img src="./assets/img/table 2.jpeg" alt="">
+        <img src="./dist/img/values.png" alt="">
         <p>
             An electronic color code is used to indicate the values or ratings of electronic components, usually for
             resistors, but also for capacitors, inductors, diodes and others.
@@ -38,7 +38,7 @@
         </p>
         <h1 id="calculate">How to calculate</h1>
         <p>To distinguish left from right there is a gap between the C and D bands:</p>
-        <img src="./assets/img/4-Band_Resistor.svg.png" alt="" style="background-color: white;">
+        <img src="./dist/img/4-Band_Resistor.svg.png" alt="" style="background-color: white;">
         <ul>
             <li>The first significant figure of component value (left side)</li>
             <li>The second significant figure (some precision resistors have a third significant figure, and thus five
@@ -61,18 +61,18 @@
         </p>
     </div>
     <div id="footer">
-        <h2> <a href="./src/views/tos.html">Terms of service</a></h2>
-        <h2> <a href="./src/views/privacy.html">Priavcy Policy</a></h2>
+        <h2> <a href="./dist/views/tos.html">Terms of service</a></h2>
+        <h2> <a href="./dist/views/privacy.html">Priavcy Policy</a></h2>
         <a href="https://github.com/R2rog/resistance-calculator">
-            <img src="./assets/img/github.png" alt="">
+            <img src="./dist/img/github.png" alt="">
         </a>
     </div>
     <script src="./main.js"></script>
-    <script src="./src/components/band.js"></script>
-    <script src="./src/components/multiplier.js"></script>
-    <script src="./src/components/tolerance.js"></script>
-    <script src="src/components/temperature.js"></script>
-    <script src="./src/components/container.js"></script>
+    <script src="./dist/components/band.js"></script>
+    <script src="./dist/components/multiplier.js"></script>
+    <script src="./dist/components/tolerance.js"></script>
+    <script src="./dist/components/temperature.js"></script>
+    <script src="./dist/components/container.js"></script>
     <script>
         const mountedApp = app.mount('#app');
     </script>

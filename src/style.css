@@ -7,7 +7,9 @@ body{
 h1{
     color: #FF4C29;
 }
-
+h2{
+    color: #ffffff;
+}
 p{
     color: #ffffff;
     text-align: justify;
@@ -19,7 +21,6 @@ input{
     text-align: center;
     font-size: 2rem;
 }
-
 .container{
     background-color:ECB365;
     height: 10rem;
@@ -27,7 +28,6 @@ input{
     flex-direction: row;
     justify-content: space-around;
 }
-
 .stripe{
     background-color: #2C394B;
     display: flex;
@@ -65,7 +65,6 @@ input{
 #bands{
     display: flex;
 }
-
 #content{
     color: white;
     margin: 0rem 5rem 5rem 5rem;
@@ -73,7 +72,7 @@ input{
 #content img{
     margin:  5% 20% 5% 20%;
     width: 60%;
-    height: 50%;
+    height: 70%;
 }
 #banner{
     display: flex;
@@ -87,9 +86,7 @@ input{
 #banner a:hover{
     color: white;
 }
-#banner h2{
-    color: #ffffff;
-}
+
 #banner h1{
     color: #000;
 }
