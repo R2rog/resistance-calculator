@@ -119,3 +119,20 @@ input{
 #footer img{
     height: 5rem;
 }
+
+@media screen and (max-width: 800px) {
+    #content img{
+        height: 12rem;
+        width: 15rem;
+        margin: 0;
+    }
+    #banner{
+        height: 3rem;
+    }
+    #banner h1{
+        font-size: 1rem;
+    }
+    #banner img{
+        height: 3rem;
+    }
+}
