@@ -60,6 +60,6 @@ function cssTask(){
 function watchTask(){
     watch([cssPath,jsPath],{interval:1000},parallel(cssTask,copyComponents));
 }
-const build = series(parallel(copyHTML, imgOpt, copyComponents,cssTask),watchTask);
+const build = series(parallel(copyHTML, imgOpt, copyComponents,cssTask));
 //exports.default = series(parallel(copyHTML, imgOpt, gifOpt,jsTask,cssTask).watchTask);
 export default build;
