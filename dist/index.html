@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A simple handy tool that helps you determine the value of a resistor ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SECURTITY POLICY-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval'; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com ; img-src 'self'; script-src-elem https://unpkg.com/vue@3 'self' 'unsafe-eval' 'unsafe-inline'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline' ;">
+    <!--LIBRARIES-->
     <script src="https://unpkg.com/vue@3"></script>
     <link rel="icon" href="./img/resistor.png">
     <link rel="stylesheet" href="./style/style.css">
-    <!--link rel="stylesheet" href="./src/style.css"-->
-
+    <!--GOOGLE FONTS API-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -22,24 +25,24 @@
         <h1><a href="#color-code">Color code</a></h1>
         <h1><a href="#calculate">How to calculate</a></h1>
         <a href="https://github.com/R2rog/resistance-calculator">
-            <img src="./img/github.png" alt="">
+            <img src="./img/github.png" alt="Github">
         </a>
     </div>
     <div id="app">
         <container></container>
     </div>
     <div id="content">
-        <h1 id="color-code">Electronic color codes</h1>
-        <img src="./img/values.png" alt="">
+        <h1 id="color-code" tabindex="0">Electronic color codes</h1>
+        <img src="./img/values.png" id="codes" alt="Table showing all the values of the electronic color code">
         <p>
             An electronic color code is used to indicate the values or ratings of electronic components, usually for
             resistors, but also for capacitors, inductors, diodes and others.
             A separate code, the 25-pair color code, is used to identify wires in some telecommunications cables.
             Different codes are used for wire leads on devices such as transformers or in building wiring.
         </p>
-        <h1 id="calculate">How to calculate</h1>
+        <h1 id="calculate" tabindex="0">How to calculate</h1>
         <p>To distinguish left from right there is a gap between the C and D bands:</p>
-        <img src="./img/4-Band_Resistor.svg.png" alt="" style="background-color: white;">
+        <img src="./img/4-Band_Resistor.svg.png" id="resistor-img" alt=" Four band resistor example with red in the first band, violet in the second band, green in the multiplier band and gold in the tolerance band.">
         <ul>
             <li>The first significant figure of component value (left side)</li>
             <li>The second significant figure (some precision resistors have a third significant figure, and thus five
@@ -65,7 +68,7 @@
         <h2> <a href="./views/tos.html">Terms of service</a></h2>
         <h2> <a href="./views/privacy.html">Priavcy Policy</a></h2>
         <a href="https://github.com/R2rog/resistance-calculator">
-            <img src="./img/github.png" alt="">
+            <img src="./img/github.png" alt="Github logo that link to the repo">
         </a>
     </div>
     <script src="./components/main.js"></script>

@@ -10,15 +10,18 @@ app.component('container',{
     /*html*/
     `
     <div id="bands">
-        <h1>Bands</h1>
-        <input 
-        type="number" 
-        min="3"
-        max="6"
-        name="bands-number" 
-        id="bands-number"
-        @click = "resetValues" 
-        v-model="bands">
+        <label>
+        Bands:
+            <input 
+            type="number" 
+            min="3"
+            max="6"
+            name="bands-number" 
+            id="bands-number"
+            @click = "resetValues" 
+            v-model="bands"
+            tabindex="0">
+        </label>
     </div>
     <div class="container">
         <div v-for = "n in this.bands"
