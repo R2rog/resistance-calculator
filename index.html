@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A simple handy tool that helps you determine the value of a resistor ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SECURTITY POLICY-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval'; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com ; img-src 'self'; script-src-elem https://unpkg.com/vue@3 'self' 'unsafe-eval' 'unsafe-inline'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline';">
+    <!--LIBRARIES-->
     <script src="https://unpkg.com/vue@3"></script>
     <link rel="icon" href="./dist/img/resistor.png">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./dist/style/style.css">
     <!--link rel="stylesheet" href="./src/style.css"-->
-
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -69,11 +72,11 @@
         </a>
     </div>
     <script src="./main.js"></script>
-    <script src="./src/components/band.js"></script>
-    <script src="./src/components/multiplier.js"></script>
-    <script src="./src/components/tolerance.js"></script>
-    <script src="./src/components/temperature.js"></script>
-    <script src="./src/components/container.js"></script>
+    <script src="./dist/components/band.js"></script>
+    <script src="./dist/components/multiplier.js"></script>
+    <script src="./dist/components/tolerance.js"></script>
+    <script src="./dist/components/temperature.js"></script>
+    <script src="./dist/components/container.js"></script>
     <script>
         const mountedApp = app.mount('#app');
     </script>
